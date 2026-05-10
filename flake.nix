@@ -172,7 +172,7 @@
               buildPhase = ''
                 runHook preBuild
                 mkdir -p dist
-                cp -r ${config.packages.wa-sqlite-dist}/ ./dist/
+                cp -r ${config.packages.wa-sqlite-dist}/. ./dist/
                 runHook postBuild
               '';
               installPhase = ''
