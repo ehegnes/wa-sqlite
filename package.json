@@ -1,6 +1,6 @@
 {
-  "name": "wa-sqlite",
-  "version": "1.1.1",
+  "name": "@ehegnes/wa-sqlite",
+  "version": "2.0.0",
   "type": "module",
   "main": "src/sqlite-api.js",
   "types": "src/types/index.d.ts",
@@ -40,6 +40,5 @@
     "web-test-runner-jasmine@0.0.6": {
       "unplugged": true
     }
-  },
-  "packageManager": "yarn@4.0.2"
+  }
 }
