@@ -29,7 +29,7 @@
           ...
         }:
         let
-          nodejs = pkgs.nodejs-slim_24;
+          nodejs = pkgs.nodejs_24;
           pnpm = pkgs.pnpm_10;
           buildPnpmPackage = import ./nix/buildPnpmPackage.nix {
             inherit pkgs nodejs pnpm;

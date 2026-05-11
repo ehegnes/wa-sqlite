@@ -870,7 +870,7 @@ declare interface SQLiteAPI {
 }
 
 /** @ignore */
-declare module 'wa-sqlite/src/sqlite-constants.js' {
+declare module '@ehegnes/wa-sqlite/src/sqlite-constants.js' {
   export const SQLITE_OK: 0;
   export const SQLITE_ERROR: 1;
   export const SQLITE_INTERNAL: 2;
@@ -1105,8 +1105,8 @@ declare module 'wa-sqlite/src/sqlite-constants.js' {
   export const SQLITE_PREPARE_NO_VTAB: 0x04;
 }
 
-declare module 'wa-sqlite' {
-  export * from 'wa-sqlite/src/sqlite-constants.js';
+declare module '@ehegnes/wa-sqlite' {
+  export * from '@ehegnes/wa-sqlite/src/sqlite-constants.js';
 
   /**
    * @ignore
@@ -1125,20 +1125,20 @@ declare module 'wa-sqlite' {
 }
 
 /** @ignore */
-declare module 'wa-sqlite/dist/wa-sqlite.mjs' {
+declare module '@ehegnes/wa-sqlite/dist/wa-sqlite.mjs' {
   function ModuleFactory(config?: object): Promise<any>;
   export = ModuleFactory;
 }
 
 /** @ignore */
-declare module 'wa-sqlite/dist/wa-sqlite-async.mjs' {
+declare module '@ehegnes/wa-sqlite/dist/wa-sqlite-async.mjs' {
   function ModuleFactory(config?: object): Promise<any>;
   export = ModuleFactory;
 }
 
 /** @ignore */
-declare module 'wa-sqlite/src/VFS.js' {
-  export * from 'wa-sqlite/src/sqlite-constants.js';
+declare module '@ehegnes/wa-sqlite/src/VFS.js' {
+  export * from '@ehegnes/wa-sqlite/src/sqlite-constants.js';
 
   export class Base implements SQLiteVFS {
     name: string;
@@ -1204,7 +1204,7 @@ declare module 'wa-sqlite/src/VFS.js' {
 }
 
 /** @ignore */
-declare module 'wa-sqlite/src/examples/tag.js' {
+declare module '@ehegnes/wa-sqlite/src/examples/tag.js' {
   /**
    * @ignore
    * Template tag builder. This function creates a tag with an API and
